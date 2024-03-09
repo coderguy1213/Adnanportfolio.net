@@ -65,6 +65,37 @@
         .IntroText, .nav-container a, h1, p {
             font-family: Georgia, serif;
         }
+        @media screen and (max-width: 600px){
+    .IntroText{
+        font-size: 50px; /* Adjust font size for smaller screens */
+    }
+    .nav-container {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center navigation links */
+    }
+    .nav-container a {
+        margin: 10px 0; /* Add space between navigation links */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    h1 {
+        font-size: 20px; /* Adjust heading font size for smaller screens */
+    }
+    .imag {
+        float: none; /* Remove float for images */
+        margin: 0 auto; /* Center images */
+    }
+    #about-me-section {
+        padding: 0 20px; /* Add padding to about me section for smaller screens */
+    }
+    p {
+        font-size: 15px; /* Adjust paragraph font size for smaller screens */
+    }
+    img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio for images */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -96,10 +127,10 @@
 <div id="about-me-section">
     <h1 style="font-size: 55px; padding-left: px;">About Me!</h1>
     <img src="unknown.png" style="height: 250px;" class="imag">
-    <p style="font-size: 32px; padding-top: 18px;">I'm a 12 year old kid who started coding on December 21st, 2023. My hobbies are Jiu-jitsu and Soccer,
-    I love playing games such as Fortnite, Minecraft, and Roblox. My favorite place to go to is Dubai because of all the delicious foods there are and very high-tech stuff.
-    Coding has been a fun experience. I also love coding because it's very unique and it's fun to see how games are made and how websites are developed.
-    Ever since, I've still been coding and working hard. In the future, I want to have many opportunities to work at jobs and maybe even make my own business,
+    <p style="font-size: 32px; padding-top: 18px;">I'm a 12 year old kid that started coding on December 21th, 2023. My hobbies are Jiu jitsu and Soccer,
+    I love playing games such as Fortnite, Minecraft, and Roblox. My favorite place to go to is Dubai because of all the delicous foods there are and very high tech stuff.
+    Coding has been a fun expierence. I also love coding because it's very uniqe and it's fun to see how games are made and how websites are devoloped.
+    Ever since, i've still been coding and working hard. In the future I want to have many opportunities to work at jobs and maybe even make my own business,
     and just overall have a great time.</p><br>
 </div><br><br>
 <h1 style="font-size: 50px;">Why you should hire me!</h1>
@@ -109,7 +140,7 @@
     This quote inspires me to write better code and think more logically.
     I am highly productive and manage my time effectively. My approach is concise and I stand out from others. I am dedicated, hardworking, and excel at overcoming obstacles. 
     You can rely on me to get the job done. I am committed to continuous improvement and never cease to strive for excellence. Thank you for considering me!</p>
-<p style="color: #000000; margin-left: px;">  &copy; 2023 MIT License Copyright.</p><br>
+<p style="color: #000000; margin-left: 0px;">  &copy; 2023 MIT License Copyright.</p>
 
 <script>
     document.querySelectorAll('a.scroll-link').forEach(anchor => {
@@ -125,6 +156,7 @@
             });
         });
     });
+
 </script>
 </body>
 </html>
