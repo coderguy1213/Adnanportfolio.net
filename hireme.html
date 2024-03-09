@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="icon" type="image/png" href="hire.png">
+    <link rel="stylesheet" href="pricing-table.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom, #74ebd5, #9face6);
+            padding-bottom: 50px;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 120px;
+            margin-left: 330px;
+            position: relative;
+        }
+
+        .pricing-plan {
+            text-align: center;
+            padding: 50px; 
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            background-color: #fff;
+            width: 30%;
+            transition: transform 0.5s;
+            font-size: 22px;
+        }
+
+        .pricing-plan:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 36px;
+        }
+
+        .price {
+            font-size: 32px;
+            color: #3e9c35;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 10px; 
+        }
+
+        .select-button {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            position: sticky;
+            bottom: 20px;
+            z-index: 999; 
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 onclick="location.href='index.html'" style="text-align: center; font-size: 35px; margin-top: 15px; color: black;">Home</h1>
+    <h1 style="text-align: center; margin-top: 16px; font-size: 75px; color: #333333;">Plans and Pricing</h1>
+    <div class="pricing-container">
+        <div class="pricing-plan" onclick="showSelectButton()">
+            <h2 style="color:#CD7F32; font-size: 50px;"><img src="bronze (2).png" style="height: 40px;">   Bronze</h2>
+            <p>✓ Limited access to features</p>
+            <p>✓ Good for people who only need a basic website</p>
+            <p>✓ Only HTML and CSS</p>
+            <p>✓ Any adjustments within 10 hours</p>
+            <p>✓ Perfect for starters</p><br>
+            <div class="price">$9.99</div>
+            <a href="basic.html"><p class="p1-border"><u>Learn more!</u></p></a>
+        </div>
+
+        <div class="pricing-plan" onclick="showSelectButton()">
+            <h2 style="font-size: 50px; color: #ffdc73; padding-bottom: px;"><img src="gold (2).png" style="height: 40px;">   Gold</h2>
+            <p>✓ Full access to all features</p>
+            <p>✓ Full HTML, CSS, and JavaScript</p>
+            <p>✓ Best website I can possibly make</p>
+            <p>✓ Any adjustments to website if needed within 48 hours</p>
+            <p>✓ You choose exactly how your website is made</p>
+            <div class="price">$19.99</div>
+            <a style="font-size: 25px; padding-bottom: 30px;" href="premium.html"><p class="p-border"><u>learn more!</u></p></a>
+        </div>
+
+        <div class="pricing-plan" onclick="showSelectButton()">
+            <h2 style="color: #a8a9ad; font-size: 50px;"><img src="silver (2).png" style="height: 40px;">   Silver</h2>
+            <p>✓ Website only designed with HTML and CSS</p>
+            <p>✓ Access to only some features</p>
+            <p>✓ Website pretty advanced</p>
+            <p>✓ Some JavaScript involved</p>
+            <p>✓ Adjustments within 24 hours</p><br>
+            <div class="price">$14.99</div>
+            <a href="standard.html"><p class="h-border"><u>Learn more!</u></p></a>
+        </div>
+    </div>
+    <a style="margin-bottom: 100px;"></a>
+
+    <div class="select-button" id="selectButton">
+        <button class="button" onclick="location.href='https://pay.adnanportfolio.net'">Select</button>
+    </div>
+
+    <script>
+        function showSelectButton() {
+            var button = document.getElementById('selectButton');
+            button.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
