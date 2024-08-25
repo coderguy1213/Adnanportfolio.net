@@ -1,8 +1,22 @@
-<h1  style="text-align: center; padding-top: 25px;"> DESCRIPTION </h1>
-<h2  style="text-align: center;"> This is my personal portfolio created by me, Adnan. Here, you'll find all the information you need to know about me. Explore my journey and accomplishments, and learn about my path to success.</h2><br>
-<h1 style="text-align: center;">LINK</h1>
-<h2  style="text-align: center;">https://AdnanPortfolio.net</h2><br>
-<h1 style="text-align: center;">SUPPORT</h1>
-<h2  style="text-align: center;"> If you would like to support me on my adventure please consider going to this link https://pay.adnanportfolio.net</h2>
-<h1 style="text-align: center;">Update</h1>
-<h2 style="text-align: center;">Website is now responsive, meaning you can now view it on mobile 8/25/24 2:35 pm </h2>
+<h1 align="center" style="padding-top: 25px;">✨ DESCRIPTION ✨</h1>
+
+<h2 align="center">Welcome to my personal portfolio! I'm Adnan, and this is where you can explore my journey, accomplishments, and learn about my path to success. Dive in to discover everything you need to know about me.</h2>
+
+<br>
+
+<h1 align="center">🔗 LINK</h1>
+
+<h2 align="center"><a href="https://AdnanPortfolio.net" target="_blank">AdnanPortfolio.net</a></h2>
+
+<br>
+
+<h1 align="center">💖 SUPPORT</h1>
+
+<h2 align="center">If you would like to support me on my adventure, please consider visiting <a href="https://pay.adnanportfolio.net" target="_blank">this link</a>. Your support means a lot!</h2>
+
+<br>
+
+<h1 align="center">🛠️ Update</h1>
+
+<h2 align="center">The website is now responsive! You can view it on mobile devices as of 8/25/24, 2:35 pm.</h2>
+
