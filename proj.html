@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to the Topics</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+   
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('south-africa-theme.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px); 
+      z-index: -1; 
+    }
+
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 0;
+    }
+
+    
+    .popup {
+      position: relative;
+      background-color: white;
+      padding: 40px;
+      width: 400px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      z-index: 1;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    
+    h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #0073e6;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    
+    .popup button {
+      padding: 15px;
+      margin: 15px 0;
+      width: 80%;
+      border: none;
+      background-color: #0073e6;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+
+    .popup button:hover {
+      background-color: #005bb5;
+    }
+
+   
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.85); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    
+    p.welcome-text {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div id="background"></div>
+
+ 
+  <div id="overlay"></div>
+  
+ 
+  <div class="popup">
+    <h2>Welcome!</h2>
+    <p class="welcome-text">Please select a topic to explore:</p>
+    <button onclick="goToPage('gov.html')">Government</button>
+    <button onclick="goToPage('pol.html')">Politics</button>
+    <button onclick="goToPage('ec.html')">Economics</button>
+    <button onclick="goToPage('cur.html')">Current Affairs</button>
+  </div>
+
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>
