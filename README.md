@@ -18,5 +18,5 @@
 
 <h1 align="center">🛠️ Update</h1>
 
-<h2 align="center">The website is now responsive! You can view it on mobile devices as of 8/25/24, 2:35 pm.</h2>
+<h2 align="center">Fixed the website and fixed skills.html</h2>
 
