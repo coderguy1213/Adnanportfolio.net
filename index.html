@@ -213,6 +213,21 @@
 </div>
 <p style="color: #444; margin: 0 auto; text-align: center;">  &copy; 2024 All Rights Reserved.</p> 
 <p style="text-align: center; color: #444;">Created by <a href="contact.html" target="_blank">Adnan</a></p>
+    <script>
+    const API_TOKEN = 'a961b5bfccbe15'; 
+
+    // Fetch data from IPInfo API
+    fetch(`https://ipinfo.io?token=${API_TOKEN}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('ip').textContent = `IP: ${data.ip}`;
+            document.getElementById('location').textContent = `Location: ${data.city}, ${data.region}, ${data.country}`;
+            document.getElementById('org').textContent = `ISP: ${data.org}`;
+        })
+        .catch(error => {
+            console.error('Error fetching IP info:', error);
+        });
+</script>
 <script>
     document.querySelectorAll('a.scroll-link').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
