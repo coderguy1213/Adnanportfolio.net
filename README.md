@@ -18,5 +18,5 @@
 
 <h1 align="center">🛠️ Update</h1>
 
-<h2 align="center">Fixed the website and fixed skills.html</h2>
+<h2 align="center">Added a Dark and light mode for users!</h2>
 
